@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <link href="styles.css" rel="stylesheet">
+  <head>
+    <title>Bem-vindo ao Açai Tropical</title>
+    <meta charset="utf-8">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+ 
+  <div class="container">
+   <div class="container-sm">
+
+      <p>
+       <!-- Milk shakes -->
+      <div class="card">
+        <div class="card">
+          <div class="card-header">Milk Shakes</div>
+
+          <a class="btn list-group-item" data-bs-toggle="collapse" href="#trad" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Tradicionais - 8,99
+          </a>
+
+          <div class="collapse" id="trad">
+            <div class="card-body">
+              <div class="Tradicionais" >
+                  <select id=milkShakesTradicionais>
+                   <option>Morango</option>
+                    <option>Chocolate</option>
+                    <option>Chocomenta</option>
+                    <option>Paçoca</option>
+                    <option>Maracujá</option>
+                    <option>Flocos</option>
+                    <option>Lacta Negra</option>
+                    <option>Abacaxi suíço</option>
+                    <option>Brigadeiro</option>
+                    <option>Taboptionto</option>
+                    <option>Uva com nata</option>
+                    <option>Prestigio</option>
+                  </select>
+                </div>
+
+              <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesTradicionais')">Adicionar a pedido</button>
+
+              </div>
+            </div>
+
+            <a class="btn list-group-item" data-bs-toggle="collapse" href="#espe" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Especiais - 9,99
+            </a>
+
+            <div class="collapse" id="espe">
+              <div class="card-body">
+                <div class="Especiais" >
+                    <select id=milkShakesEspeciais>
+                      <option>Cappuccino</option>
+                      <option>Sonho de valsa</option>
+                      <option>Oreo</option>
+                      <option>Ovomaltine</option>
+                      <option>Bis</option>
+                      <option>Sensações</option>
+                    </select>
+                  </div>
+  
+                <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesEspeciais')">Adicionar a pedido</button>
+  
+                </div>
+              </div>
+
+            <a class="btn list-group-item" data-bs-toggle="collapse" href="#sup" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Supreme - 10,99
+            </a>
+
+            <div class="collapse" id="sup">
+              <div class="card-body">
+                <div class="Supremes" >
+                    <select id=milkShakesSupremes>
+                      <option>Cokkie</option>
+                      <option>Kit kat</option>
+                    </select>
+                  </div>
+  
+                <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesSupremes')">Adicionar a pedido</button>
+  
+                </div>
+              </div>
+        </div>
+      </div>
+      <p>
+      
+        <!-- Foundue -->
+      <div>
+      <a class="card btn" data-bs-toggle="collapse" href="#Foundue" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Foundue
+      </a>
+
+      <div class="collapse" id="Foundue">
+        <div class="card card-body">
+          Acompanhamentos
+          <p>
+          <p>
+          Morango - Kiwi - Banana - Uva - Brownie
+          <p>
+          Adicional Marshmellow - 2,00  <input type="checkbox" id="adicional" unchecked>  
+          <p>
+          <button type="button" id="btn-foundue" onclick="adicionarFoudue('Foundue')" class="btn btn-outline-success">Adicionar a pedido</button>
+        </div>
+      </div>
+      </div>
+      <p>
+
+       <!-- Brownie Normal -->
+      <div>
+      <a class="card btn" data-bs-toggle="collapse" href="#Brownie" role="button" aria-expanded="false" aria-controls="collapseExample">
+       Brownie Normal
+      </a>
+
+      <div class="collapse" id="Brownie">
+        <div class="card card-body">
+          Brownie + 1 Bola de sorvete
+          <p>
+          <button type="button" class="btn btn-outline-success" onclick="adicionaritemSimples('Brownie Normal')">Adicionar a pedido</button>
+        </div>
+      </div>
+   
+   
+    </div>
+    
+     <!-- Brownie Especial -->
+     <div>
+      <a class="card btn" data-bs-toggle="collapse" href="#BrownieE" role="button" aria-expanded="false" aria-controls="collapseExample">
+       Brownie Especial
+      </a>
+
+      <div class="collapse" id="BrownieE">
+        <div class="card card-body">
+          <div>Brownie + 2 Bolas de sorvete</div>
+          <p>
+            <select id="brownieEspecial">
+              <option>Morango</option>
+              <option>Castanhas</option>
+            </select>
+          <p>
+          <button type="button" class="btn btn-outline-success" onclick="adicionaritem('Brownie de','brownieEspecial')">Adicionar a pedido</button>
+        </div>
+      </div>
+
+   </div>
+   <p>
+    <div id="lista" class="card">
+      <div class="card-body">
+      <text id="pedido" style=>Pedido</text>
+      <p>
+      <button type="button" class="btn btn-outline-success" onclick="enviar()">Enviar a pedido</button>
+      </div>
+    </div> 
+   </div>
+  </div>
+
+
+  </body>
+
+  <script type="text/javascript" src="main.js"></script>
+
+</html>
