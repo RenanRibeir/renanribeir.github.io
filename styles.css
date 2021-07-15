@@ -5,7 +5,7 @@ html *
    font-family: Arial !important;
 }
 
-div
+#pag
 {
-   width: 18rem;
+  padding: 20px;
 }
