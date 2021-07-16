@@ -22,3 +22,13 @@ html *
 {
    width: 80%;
 }
+
+select
+{
+   width: 100%;
+}
+
+button
+{
+   width: 100%;
+}
