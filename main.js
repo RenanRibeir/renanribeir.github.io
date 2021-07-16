@@ -6,13 +6,13 @@ function enviar()
 {
     let filhos = document.querySelectorAll('#pedido > *');
     console.log(filhos)
-    var msg = 'Pedido%20de%20Carlos%20Mesa%2001%0A';
+    var msg = 'Pedido%0A%0A';
     
     var phone = 558597821541
     for(var i = 0;i<filhos.length;i++)
      msg += filhos[i].innerText.substring(0,filhos[i].innerText.length - 1) + "%0A"
     
-    msg += 'Total%20R$%20'+total
+    msg += '%0ATotal%20R$%20'+total
     console.log(msg)
     window.open("https://api.whatsapp.com/send?phone=" + phone + "&text=" + msg, "_blank");
 }
