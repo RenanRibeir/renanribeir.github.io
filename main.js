@@ -18,8 +18,7 @@ function enviar()
 function adicionaritemSimples(item)
 {
 
-    sessionStorage[idItem]  = '<p id="'+idItem+'">  - '+item+'<button onclick="remover('+idItem+')">Remover</button>'
-    
+    sessionStorage[idItem]  = '<div class="item"  id="'+idItem+'"><text> - '+item+'</text><text onclick="remover('+idItem+')">X</text></div>'
     text.innerHTML =  text.innerHTML + sessionStorage[idItem];
 
     idItem++;
@@ -31,7 +30,7 @@ function adicionaritem(item,cx)
     var select = document.getElementById(cx);
 	var value = select.options[select.selectedIndex].value;
 
-    sessionStorage[idItem]  = '<p id="'+idItem+'"> - '+item+' '+value+'<button onclick="remover('+idItem+')">Remover</button>'
+    sessionStorage[idItem]  = '<div class="item"  id="'+idItem+'"><text> - '+item+' '+value+'</text><text onclick="remover('+idItem+')">X</text></div>'
     
     text.innerHTML =  text.innerHTML + sessionStorage[idItem];
 
@@ -45,7 +44,7 @@ function adicionarFoudue(item)
         item += " com Mashmellow"; 
     }
 
-    sessionStorage[idItem] = '<p id="'+idItem+'"> - '+item+'<button onclick="remover('+idItem+')">Remover</button>'
+    sessionStorage[idItem] = '<div class="item"  id="'+idItem+'"><text> - '+item+'</text><text onclick="remover('+idItem+')">X</text></div>'
     
     text.innerHTML =  text.innerHTML + sessionStorage[idItem];
 
