@@ -44,7 +44,7 @@
                   </select>
                 </div>
 
-              <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesTradicionais')">Adicionar a pedido</button>
+              <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesTradicionais',8.99)">Adicionar a pedido</button>
 
               </div>
             </div>
@@ -66,7 +66,7 @@
                     </select>
                   </div>
   
-                <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesEspeciais')">Adicionar a pedido</button>
+                <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesEspeciais',9.99)">Adicionar a pedido</button>
   
                 </div>
               </div>
@@ -84,7 +84,7 @@
                     </select>
                   </div>
   
-                <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesSupremes')">Adicionar a pedido</button>
+                <button type="button" class="btn btn-outline-success"  onclick="adicionaritem('MilkShake de','milkShakesSupremes',10.99)">Adicionar a pedido</button>
   
                 </div>
               </div>
@@ -95,7 +95,7 @@
         <!-- Fondue -->
       <div>
       <a class="card btn" data-bs-toggle="collapse" href="#Fondue" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Fondue
+        Fondue - 30,00
       </a>
 
       <div class="collapse" id="Fondue">
@@ -107,7 +107,7 @@
           <p>
           Adicional Marshmellow - 2,00  <input type="checkbox" id="adicional" unchecked>  
           <p>
-          <button type="button" id="btn-Fondue" onclick="adicionarFoudue('Fondue')" class="btn btn-outline-success">Adicionar a pedido</button>
+          <button type="button" id="btn-Fondue" onclick="adicionarFoudue('Fondue',30)" class="btn btn-outline-success">Adicionar a pedido</button>
         </div>
       </div>
       </div>
@@ -116,14 +116,14 @@
        <!-- Brownie Normal -->
       <div>
       <a class="card btn" data-bs-toggle="collapse" href="#Brownie" role="button" aria-expanded="false" aria-controls="collapseExample">
-       Brownie Normal
+       Brownie Normal - 8.00
       </a>
 
       <div class="collapse" id="Brownie">
         <div class="card card-body">
           Brownie + 1 Bola de sorvete
           <p>
-          <button type="button" class="btn btn-outline-success" onclick="adicionaritemSimples('Brownie Normal')">Adicionar a pedido</button>
+          <button type="button" class="btn btn-outline-success" onclick="adicionaritemSimples('Brownie Normal',8)">Adicionar a pedido</button>
         </div>
       </div>
    
@@ -133,7 +133,7 @@
      <!-- Brownie Especial -->
      <div>
       <a class="card btn" data-bs-toggle="collapse" href="#BrownieE" role="button" aria-expanded="false" aria-controls="collapseExample">
-       Brownie Especial
+       Brownie Especial - 12,00
       </a>
 
       <div class="collapse" id="BrownieE">
@@ -145,15 +145,20 @@
               <option>Castanhas</option>
             </select>
           <p>
-          <button type="button" class="btn" onclick="adicionaritem('Brownie com','brownieEspecial')">Adicionar a pedido</button>
+          <button type="button" class="btn" onclick="adicionaritem('Brownie com','brownieEspecial',12)">Adicionar a pedido</button>
         </div>
       </div>
 
    </div>
    <p>
+
+    <!--Pedido-->
     <div id="lista" class="card">
       <div class="card-body">
       <text id="pedido" style=>Pedido</text>
+      <p>
+      <p>
+      <text id='totalPedido'>Total: R$ 0</text>
       <p>
       <button type="button" class="btn btn-outline-success" onclick="enviar()">Enviar a pedido</button>
       </div>
